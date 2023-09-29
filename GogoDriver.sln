@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GogoDriverAdmin", "GogoDriv
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GogoDriverWeb", "GogoDriverWeb\GogoDriverWeb.csproj", "{44E4B5F6-0898-4812-8E81-0363B02355C6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain", "Domain\Domain.csproj", "{F020A7A0-A595-4A88-8516-CACD367AD913}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{44E4B5F6-0898-4812-8E81-0363B02355C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{44E4B5F6-0898-4812-8E81-0363B02355C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{44E4B5F6-0898-4812-8E81-0363B02355C6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F020A7A0-A595-4A88-8516-CACD367AD913}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F020A7A0-A595-4A88-8516-CACD367AD913}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F020A7A0-A595-4A88-8516-CACD367AD913}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F020A7A0-A595-4A88-8516-CACD367AD913}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
