@@ -1,0 +1,52 @@
+﻿@model GogoDriver.Models.Chauffeur
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+
+<h4>Chauffeur</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="IdPersonne" class="control-label"></label>
+                <select asp-for="IdPersonne" class ="form-control" asp-items="ViewBag.IdPersonne"></select>
+            </div>
+            <div class="form-group">
+                <label asp-for="IdChauffeur" class="control-label"></label>
+                <input asp-for="IdChauffeur" class="form-control" />
+                <span asp-validation-for="IdChauffeur" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="NumPermi" class="control-label"></label>
+                <input asp-for="NumPermi" class="form-control" />
+                <span asp-validation-for="NumPermi" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="NumCapacite" class="control-label"></label>
+                <input asp-for="NumCapacite" class="form-control" />
+                <span asp-validation-for="NumCapacite" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="EtatChauffeur" class="control-label"></label>
+                <input asp-for="EtatChauffeur" class="form-control" />
+                <span asp-validation-for="EtatChauffeur" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
